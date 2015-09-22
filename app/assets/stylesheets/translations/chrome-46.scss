@@ -285,6 +285,7 @@ $browser_capabilities: (
 	"ol-reversed": y,
 	"css-first-letter": y,
 	"wbr-element": y,
+	"const": a,
 	"css-all": y,
 	"css-initial-value": y,
 	"css-letter-spacing": y,
@@ -292,6 +293,9 @@ $browser_capabilities: (
 	"insertadjacenthtml": y,
 	"let": a,
 	"arrow-functions": y,
+	"asmjs": a,
+	"lazyload": n,
+	"link-rel-dns-prefetch": y,
 	"link-rel-prerender": y,
 	"rest-parameters": nd,
 	"css-cross-fade": yx,
@@ -301,6 +305,7 @@ $browser_capabilities: (
 	"addeventlistener": y,
 	"documenthead": y,
 	"innertext": y,
+	"link-rel-preconnect": y,
 	"netinfo": n,
 	"setimmediate": n
 );

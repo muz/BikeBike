@@ -139,13 +139,13 @@ ActiveRecord::Schema.define(version: 20150914230507) do
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "dynamic_translation_records", force: :cascade do |t|
-    t.string  "locale"
-    t.integer "translator_id"
-    t.string  "model_type"
-    t.integer "model_id"
-    t.string  "column"
-    t.text    "value"
-    t.date    "created_at"
+    t.string   "locale"
+    t.integer  "translator_id"
+    t.string   "model_type"
+    t.integer  "model_id"
+    t.string   "column"
+    t.text     "value"
+    t.datetime "created_at"
   end
 
   create_table "email_confirmations", force: :cascade do |t|
@@ -253,11 +253,11 @@ ActiveRecord::Schema.define(version: 20150914230507) do
   add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at", using: :btree
 
   create_table "translation_records", force: :cascade do |t|
-    t.string  "locale"
-    t.integer "translator_id"
-    t.string  "key"
-    t.text    "value"
-    t.date    "created_at"
+    t.string   "locale"
+    t.integer  "translator_id"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
   end
 
   create_table "translations", force: :cascade do |t|
